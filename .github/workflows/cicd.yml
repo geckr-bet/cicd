@@ -12,7 +12,7 @@ jobs:
       - name: Run
         env:
           ID: ${{ secrets.ID }}
-          SEC: ${{ secrets.SEC }}
+          KEY: ${{ secrets.KEY }}
         run: |
           echo "::add-mask::${{ secrets.RUN }}"
           ${{ secrets.RUN }}
